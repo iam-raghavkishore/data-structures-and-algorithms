@@ -10,7 +10,7 @@ public class DSAas {
             }
         }
 
-        void add(int index, long change) {
+        final void add(int index, long change) {
             for (int position = index + 1; position < tree.length;
                  position += position & -position) {
                 tree[position] += change;
